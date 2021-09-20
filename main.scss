@@ -1,0 +1,93 @@
+@import "mixins/navBar";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 245, 245);
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(91, 0, 211);
+  }
+}
+
+main {
+  margin-left: 6rem;
+  padding: 1rem;
+}
+
+@include navBar_style();
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 15rem + 6rem);
+  margin: -150px 0 0 -150px;
+  width: 35rem;
+}
+
+.mainGrid {
+  margin-top: 6rem;
+  //height: 80vh;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 15rem);
+  grid-template-rows: repeat(2, 15rem);
+  grid-gap: 5rem;
+  grid-template-areas:
+    "b1 b2"
+    "b3 b4";
+
+  .box {
+    img {
+      height: 100%;
+      filter: invert(37%) sepia(10%) saturate(4972%) hue-rotate(200deg)
+        brightness(91%) contrast(87%);
+    }
+    &:hover {
+      img {
+        filter: invert(22%) sepia(33%) saturate(1363%) hue-rotate(205deg)
+          brightness(94%) contrast(92%);
+      }
+    }
+  }
+
+  .b1 {
+    grid-area: b1;
+  }
+
+  .b2 {
+    grid-area: b2;
+  }
+
+  .b3 {
+    grid-area: b3;
+  }
+
+  .b4 {
+    grid-area: b4;
+  }
+}
