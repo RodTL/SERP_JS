@@ -5,167 +5,210 @@
   position: fixed;
   background-color: #404042;
   transition: width 200ms ease;
-  overflow: hidden; }
-  .navBar:hover {
-    width: 12rem; }
-    .navBar:hover .logo img {
-      transform: rotate(-180deg);
-      transition: 600ms; }
-    .navBar:hover .navBar-nav .navItem .navLink .LinkText {
-      display: block; }
-    .navBar:hover .navBar-nav .navItem .navLink:hover img {
-      filter: invert(30%) sepia(79%) saturate(1090%) hue-rotate(285deg) brightness(90%) contrast(90%); }
-  .navBar .ver {
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: "Open Sans";
-    color: #6e6753;
-    margin-left: 10px; }
-  .navBar .navBar-nav {
-    list-style: none;
-    padding: 0;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%; }
-    .navBar .navBar-nav .navItem {
-      height: 9rem;
-      width: 100%; }
-      .navBar .navBar-nav .navItem:first-child {
-        margin-bottom: 5rem; }
-      .navBar .navBar-nav .navItem:last-child {
-        margin-top: auto; }
-      .navBar .navBar-nav .navItem .navLink {
-        display: flex;
-        align-items: center;
-        height: 5rem;
-        color: #b6b6b6;
-        text-decoration: none;
-        filter: grayscale(100%) opacity(0.7);
-        transition: 600ms; }
-        .navBar .navBar-nav .navItem .navLink:hover {
-          filter: grayscale(0%) opacity(1);
-          background: #33333d;
-          color: #ececec; }
-        .navBar .navBar-nav .navItem .navLink svg {
-          width: 2rem;
-          min-width: 2rem;
-          margin: 0 1.5rem; }
-        .navBar .navBar-nav .navItem .navLink img {
-          height: 3rem;
-          margin-left: 1.5rem; }
-        .navBar .navBar-nav .navItem .navLink .LinkText {
-          display: none;
-          margin-left: 1rem; }
+  overflow: hidden;
+}
+.navBar:hover {
+  width: 12rem;
+}
+.navBar:hover .logo img {
+  transform: rotate(-180deg);
+  transition: 600ms;
+}
+.navBar:hover .navBar-nav .navItem .navLink .LinkText {
+  display: block;
+}
+.navBar:hover .navBar-nav .navItem .navLink:hover img {
+  filter: invert(30%) sepia(79%) saturate(1090%) hue-rotate(285deg)
+    brightness(90%) contrast(90%);
+}
+.navBar .ver {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Open Sans";
+  color: #6e6753;
+  margin-left: 10px;
+}
+.navBar .navBar-nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.navBar .navBar-nav .navItem {
+  height: 9rem;
+  width: 100%;
+}
+.navBar .navBar-nav .navItem:first-child {
+  margin-bottom: 5rem;
+}
+.navBar .navBar-nav .navItem:last-child {
+  margin-top: auto;
+}
+.navBar .navBar-nav .navItem .navLink {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: #b6b6b6;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 600ms;
+}
+.navBar .navBar-nav .navItem .navLink:hover {
+  filter: grayscale(0%) opacity(1);
+  background: #33333d;
+  color: #ececec;
+}
+.navBar .navBar-nav .navItem .navLink svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+.navBar .navBar-nav .navItem .navLink img {
+  height: 3rem;
+  margin-left: 1.5rem;
+}
+.navBar .navBar-nav .navItem .navLink .LinkText {
+  display: none;
+  margin-left: 1rem;
+}
 
 :root {
   font-size: 16px;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 0;
-  background-color: whitesmoke; }
-  body::-webkit-scrollbar {
-    width: 0.25rem; }
-  body::-webkit-scrollbar-track {
-    background: black; }
-  body::-webkit-scrollbar-thumb {
-    background: #5b00d3; }
+  background-color: whitesmoke;
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background: #5b00d3;
+}
 
 main {
   margin-left: 14rem;
   display: flex;
   flex-direction: column;
-  height: 90vh; }
-  main h1 {
-    margin-top: 3rem;
-    font-family: "Open Sans";
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: darkblue; }
-  main .tabHeader {
-    align-self: center;
-    margin-top: 3rem;
-    width: 60vw;
-    padding-bottom: 0.75rem;
-    border-bottom: #333333 solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    main .tabHeader .tab a {
-      text-decoration: none; }
-      main .tabHeader .tab a:hover {
-        font-weight: bold;
-        color: #060f81; }
-  main .studentsProfile {
-    display: flex;
-    flex-direction: row; }
-    main .studentsProfile .searchTable {
-      padding: 3rem; }
-      main .studentsProfile .searchTable .table {
-        border-style: solid;
-        margin-top: 1rem;
-        display: block;
-        height: 450px;
-        overflow-y: scroll; }
-        main .studentsProfile .searchTable .table th {
-          max-width: 100px; }
-          main .studentsProfile .searchTable .table th .search-input {
-            width: 100%; }
-        main .studentsProfile .searchTable .table tr {
-          background-color: #ffffff;
-          box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-          line-height: 1.2rem; }
-    main .studentsProfile .workArea {
-      margin-top: 5rem;
-      align-self: center;
-      display: grid;
-      grid-template-columns: repeat(2, 33rem);
-      grid-template-rows: repeat(2, 23rem);
-      grid-gap: 1.5rem;
-      grid-template-areas: "c1 c2" "c3 c3"; }
-      main .studentsProfile .workArea .newStudentBtn {
-        display: none; }
-    main .studentsProfile .container {
-      background-color: #d1d1d1;
-      border-radius: 1rem; }
-    main .studentsProfile .c1 {
-      grid-area: c1;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center; }
-      main .studentsProfile .c1 div {
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start; }
-        main .studentsProfile .c1 div th {
-          text-align: right; }
-        main .studentsProfile .c1 div .inputInfo {
-          width: 100px;
-          display: none; }
-    main .studentsProfile .c2 {
-      grid-area: c2; }
-    main .studentsProfile .c3 {
-      grid-area: c3; }
-    main .studentsProfile .studentProfileMenu {
-      padding: 5rem;
-      display: flex;
-      flex-direction: column;
-      /*
+  height: 90vh;
+}
+main h1 {
+  margin-top: 3rem;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkblue;
+}
+main .tabHeader {
+  align-self: center;
+  margin-top: 3rem;
+  width: 60vw;
+  padding-bottom: 0.75rem;
+  border-bottom: #333333 solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .tabHeader .tab a {
+  text-decoration: none;
+}
+main .tabHeader .tab a:hover {
+  font-weight: bold;
+  color: #060f81;
+}
+main .studentsProfile {
+  display: flex;
+  flex-direction: row;
+}
+main .studentsProfile .searchTable {
+  padding: 3rem;
+}
+main .studentsProfile .searchTable .table {
+  border-style: solid;
+  margin-top: 1rem;
+  display: block;
+  height: 450px;
+  overflow-y: scroll;
+}
+main .studentsProfile .searchTable .table th {
+  max-width: 100px;
+}
+main .studentsProfile .searchTable .table th .search-input {
+  width: 100%;
+}
+main .studentsProfile .searchTable .table tr {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  line-height: 1.2rem;
+}
+main .studentsProfile .workArea {
+  margin-top: 5rem;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 33rem);
+  grid-template-rows: repeat(2, 23rem);
+  grid-gap: 1.5rem;
+  grid-template-areas: "c1 c2" "c3 c3";
+}
+main .studentsProfile .workArea .newStudentBtn {
+  display: none;
+}
+main .studentsProfile .container {
+  background-color: #d1d1d1;
+  border-radius: 1rem;
+}
+main .studentsProfile .c1 {
+  grid-area: c1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .studentsProfile .c1 div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+main .studentsProfile .c1 div th {
+  text-align: right;
+}
+main .studentsProfile .c1 div .inputInfo {
+  width: 100px;
+  display: none;
+}
+main .studentsProfile .c2 {
+  grid-area: c2;
+}
+main .studentsProfile .c3 {
+  grid-area: c3;
+}
+main .studentsProfile .studentProfileMenu {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  /*
       #addStudent{
 
       }
-      */ }
+      */
+}
 
 /*# sourceMappingURL=students.css.map */

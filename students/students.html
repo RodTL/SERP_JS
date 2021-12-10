@@ -100,59 +100,77 @@
             </div>
             
             <div class="workArea">
+                
                 <button type="button" class="newStudentBtn" id="saveAddStudent">Save New Student</button>
                 <button type="button" class="newStudentBtn" id="cancelAddStudent">Cancel</button>
                 <button type="button" class="studentBtn" id="editStudent">Edit</button>
                 <div class="container c1">
                     <img src="" alt="Student Profile Picture">
-                    <div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Last name:</th>
-                                    <td class="selectedStudentTag" id="lastNamet"></td>
-                                    <td>
-                                        <input type="text" class="inputInfo">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Name:</th>
-                                    <td class="selectedStudentTag" id="namet"></td>
-                                    <td>
-                                        <input type="text" class="inputInfo">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Grade:</th>
-                                    <td class="selectedStudentTag" id="gradet"></td>
-                                    <td>
-                                        <input type="text" class="inputInfo">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Group:</th>
-                                    <td class="selectedStudentTag" id="groupt"></td>
-                                    <td>
-                                        <input type="text" class="inputInfo">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Birthday:</th>
-                                    <td class="selectedStudentTag" id="aget"></td>
-                                    <td>
-                                        <input type="text" class="inputInfo">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">ID:</th>
-                                    <td class="selectedStudentTag" id="idt"></td>
-                                    <td>
-                                        <input type="text" id="newID" class="inputInfo">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        <div>                          
+                            <form method="post" action="/">
+                                <p>Last Name:</p>
+                                <input type="text" class="inputInfo" name="lastName_input">
+                                <p>Name:</p>
+                                <input type="text" class="inputInfo" name="name_input">
+                                <p>Last Grade:</p>
+                                <input type="text" class="inputInfo" name="grade_input">
+                                <p>Last Group:</p>
+                                <input type="text" class="inputInfo" name="group_input">
+                                <p>Last ID:</p>
+                                <input type="text" id="newID" class="inputInfo" name="id_input">
+                                
+                                <button>Save Student</button>
+                            </form>
+                            <!--
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Last name:</th>
+                                        <td class="selectedStudentTag" id="lastNamet"></td>
+                                        <td>
+                                            <input type="text" class="inputInfo" name="lastName_input">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Name:</th>
+                                        <td class="selectedStudentTag" id="namet"></td>
+                                        <td>
+                                            <input type="text" class="inputInfo" name="name_input">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Grade:</th>
+                                        <td class="selectedStudentTag" id="gradet"></td>
+                                        <td>
+                                            <input type="text" class="inputInfo" name="grade_input">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Group:</th>
+                                        <td class="selectedStudentTag" id="groupt"></td>
+                                        <td>
+                                            <input type="text" class="inputInfo" name="group_input">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Birthday:</th>
+                                        <td class="selectedStudentTag" id="aget"></td>
+                                        <td>
+                                            <input type="text" class="inputInfo" name="bd_input">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">ID:</th>
+                                        <td class="selectedStudentTag" id="idt"></td>
+                                        <td>
+                                            <input type="text" id="newID" class="inputInfo" name="id_input">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            -->
+                        </div>
+                    
                 </div>
                 <div class="container c2">
 
